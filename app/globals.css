@@ -101,46 +101,6 @@
     box-shadow: 0 4px 12px rgba(254, 105, 1, 0.3);
   }
 
-  .btn-back {
-    background-color: var(--color-question-bg);
-    color: var(--color-primary);
-    font-weight: 600;
-    padding: 0.875rem 2.5rem;
-    border-radius: 12px;
-    transition: all 0.2s ease;
-    font-family: var(--font-montserrat);
-  }
-
-  .btn-back:hover {
-    background-color: #fef3c7;
-    transform: translateY(-1px);
-  }
-
-  .btn-back-mobile {
-    background-color: var(--color-question-bg);
-    color: var(--color-primary);
-    font-weight: 600;
-    padding: 1rem 2rem;
-    border-radius: 12px;
-    transition: all 0.2s ease;
-    font-family: var(--font-montserrat);
-    text-align: center;
-  }
-
-  .btn-back-mobile:hover {
-    background-color: #fef3c7;
-    transform: translateY(-1px);
-  }
-
-  .btn-back:disabled,
-  .btn-back-mobile:disabled {
-    background-color: #f3f4f6;
-    color: #9ca3af;
-    cursor: not-allowed;
-    transform: none;
-    box-shadow: none;
-  }
-
   .card-container {
     @apply bg-white rounded-3xl px-6 py-8 md:px-12 md:py-14 shadow-md max-w-4xl w-full mx-auto;
   }

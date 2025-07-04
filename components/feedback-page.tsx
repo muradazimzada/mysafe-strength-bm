@@ -182,20 +182,26 @@ You are capable, resilient, and deserving of care.
         <div>
           {/* Mobile: Stacked buttons */}
           <div className="flex flex-col space-y-3 md:hidden">
-            <Button onClick={onPrevious} className="btn-back-mobile w-full">
+            <Button variant="backButton" onClick={onPrevious} className="w-full py-3 px-6">
               <span>← Back</span>
             </Button>
-            <Button onClick={onNext} className="btn-primary w-full">
+            <Button
+              onClick={onNext}
+              className="w-full py-3 px-6 bg-[#f28132] hover:bg-[#e06b1f] text-white rounded-full font-semibold"
+            >
               <span>Continue ⟶</span>
             </Button>
           </div>
 
           {/* Desktop: Side by side buttons */}
           <div className="hidden md:flex justify-between">
-            <Button onClick={onPrevious} className="btn-back flex items-center space-x-2">
+            <Button variant="backButton" onClick={onPrevious} className="flex items-center space-x-2 py-3 px-6">
               <span>← Back</span>
             </Button>
-            <Button onClick={onNext} className="btn-primary flex items-center space-x-2">
+            <Button
+              onClick={onNext}
+              className="flex items-center space-x-2 py-3 px-6 bg-[#f28132] hover:bg-[#e06b1f] text-white rounded-full font-semibold"
+            >
               <span>Continue ⟶</span>
             </Button>
           </div>

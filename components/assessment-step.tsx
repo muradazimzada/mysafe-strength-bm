@@ -69,23 +69,32 @@ export function AssessmentStepComponent({ step, onNext, onPrevious, isFirst, isL
         <div className="mt-6 pt-4 border-t border-gray-200">
           {/* Mobile: Stacked buttons */}
           <div className="flex flex-col space-y-3 md:hidden">
-            <Button onClick={handlePrevious} disabled={false} className="btn-back-mobile w-full">
+            <Button variant="backButton" onClick={handlePrevious} disabled={false} className="w-full py-3 px-6">
               <span>← Back</span>
             </Button>
-            <Button onClick={handleNext} disabled={!isStepComplete()} className="btn-primary w-full">
+            <Button
+              onClick={handleNext}
+              disabled={!isStepComplete()}
+              className="w-full py-3 px-6 bg-[#f28132] hover:bg-[#e06b1f] text-white rounded-full font-semibold"
+            >
               <span>Continue ⟶</span>
             </Button>
           </div>
 
           {/* Desktop: Side by side buttons */}
           <div className="hidden md:flex justify-between items-center">
-            <Button onClick={handlePrevious} disabled={false} className="btn-back flex items-center space-x-2">
+            <Button
+              variant="backButton"
+              onClick={handlePrevious}
+              disabled={false}
+              className="flex items-center space-x-2 py-3 px-6"
+            >
               <span>← Back</span>
             </Button>
             <Button
               onClick={handleNext}
               disabled={!isStepComplete()}
-              className="btn-primary flex items-center space-x-2"
+              className="flex items-center space-x-2 py-3 px-6 bg-[#f28132] hover:bg-[#e06b1f] text-white rounded-full font-semibold"
             >
               <span>Continue</span>
               <ChevronRight className="w-4 h-4" />
